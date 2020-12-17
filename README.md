@@ -7,7 +7,7 @@ I plan to implement a couple things related to what I enjoy doing for a living a
 
 As of 12.17.2020
 
-Some of these things will include:
+Some ideas of things I wish include later:
 
 # Music for Video Games/Commericial use
 
