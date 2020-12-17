@@ -15,9 +15,20 @@
   font-family: tahoma;
 }
 
+#will-photo {
+  width: 150px;
+  border: solid black;
+  border-width: 1px;
+  margin-left: 150px;
+  box-shadow: 1px 2px 1px 0.2px black;
+  opacity: inherit;
+}
+
 #occup {
+  border-bottom-style: double;
   text-align: right;
   padding-top: 70px;
+  padding-bottom: 20px;
   text-indent: 150px;
   direction: rtl;
 }
@@ -44,13 +55,12 @@
 }
 
 #biography {
-  box-shadow: 2px 5px black;
+  box-shadow: 3px 5px black;
   margin: auto;
   margin-top: 25px;
   margin-right: 100px;
   margin-left: 100px;
   width: auto;
-  background-color: white;
   padding: 12px;
   border: solid 2px;
   background-color: rgb(157, 194, 178);
@@ -66,7 +76,7 @@ h1 {
 
 h6 {
   float: inline-end;
-  font-size: 130%;
+  font-size: 150%;
   margin-bottom: 20px;
   text-indent: 90px;
   text-shadow: 1px 0.6px 0.25px white;
@@ -89,6 +99,7 @@ h2 {
   padding-bottom: 20px;
   border-bottom-style: solid;
   margin-block: 1%;
+  text-indent: 50px;
 }
 
 #intro-body {
