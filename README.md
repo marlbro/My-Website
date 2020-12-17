@@ -15,5 +15,3 @@ A way to display my craft in Dance
 Things I've learned from Web Development
 
 A small blog about academia within the Arts
-
-//////
