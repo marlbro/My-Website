@@ -15,14 +15,107 @@
   font-family: tahoma;
 }
 
-#will-photo {
-  width: 150px;
-  border: solid black;
-  border-width: 1px;
-  margin-left: 150px;
-  box-shadow: 1px 2px 1px 0.2px black;
-  opacity: inherit;
+/****************************
+hides and displays bio photos
+*****************************/
+.hidden {
+  display: hidden;
 }
+
+.overlay {
+  position: absolute;
+  text-align: center;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  transition: 0.3s eas;
+  background-color: #008cba;
+}
+
+button {
+  display: inline-block;
+  outline: none;
+  border-style: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: inherit;
+  cursor: pointer;
+  margin: 0.0001rem;
+}
+
+.send-button {
+  background-color: lawngreen;
+  font-family: arial;
+  font-size: 11px;
+  padding: 3px 3px;
+  border: 2px black;
+  box-shadow: black;
+}
+
+.photo-container {
+  display: inline-table;
+  box-shadow: 0.2px black;
+  /* position: relative; */
+}
+
+.image {
+  width: 150px;
+  display: inline-block;
+  border: black 1px;
+}
+
+.image:hover {
+  width: 160px;
+  display: inline-block;
+  border: black 1px;
+  /* transition: ease-in-out 0.5s;
+  transition-duration: 0.5s;
+  transition-property: all; */
+}
+
+.photo-buttons {
+  margin: none;
+  display: inline-block;
+  outline: none;
+  border-style: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+#photo1 {
+  display: block;
+  border: solid 2px;
+}
+
+#photo1:hover .overlay {
+  opacity: 1;
+}
+
+#photo2 {
+  border: solid 2px;
+}
+
+#photo3 {
+  border: solid 2px;
+  border-color: rgb(255, 183, 0);
+}
+.photo-buttons:hover {
+  background-size: contain;
+  opacity: 60%;
+  transition: 0.3s ease-in;
+}
+
+/* .photo-buttons:hover .overlay {
+  background-size: contain;
+  opacity: 1;
+  transition: 0.5s ease-in;
+} */
 
 #occup {
   border-bottom-style: double;
