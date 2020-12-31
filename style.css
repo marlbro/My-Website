@@ -37,16 +37,24 @@ hides and displays bio photos
 }
 
 button {
-  display: inline-block;
+  display: relative;
   outline: none;
   border-style: none;
+  font-family: Arial;
+  font-size: 11px;
+  font-weight: bolder;
   background-size: contain;
   background-repeat: no-repeat;
   background-color: inherit;
   cursor: pointer;
+  transition: 0.1s ease-in;
   margin: 0.0001rem;
 }
 
+button:hover {
+  display: inherit;
+  opacity: 80%;
+}
 .send-button {
   background-color: lawngreen;
   font-family: arial;
@@ -63,24 +71,32 @@ button {
 }
 
 .image {
-  width: 150px;
+  width: 100px;
   display: inline-block;
   border: black 1px;
+  border-width: 0.75rem;
+  display: block;
+  border: solid 2px;
+  opacity: 75%;
+  cursor: zoom-in;
 }
 
 .image:hover {
-  width: 160px;
+  opacity: 1;
+  width: 300px;
   display: inline-block;
-  border: black 1px;
+  border-color: rgb(255, 183, 0);
+  border-width: 0.25rem;
+  transition: 0.3s ease-in-out;
   /* transition: ease-in-out 0.5s;
   transition-duration: 0.5s;
   transition-property: all; */
 }
 
-.photo-buttons {
+.-button {
   margin: none;
-  display: inline-block;
-  outline: none;
+  display: relative;
+  outline: black 3px;
   border-style: none;
   background-size: contain;
   background-repeat: no-repeat;
@@ -88,34 +104,17 @@ button {
   cursor: pointer;
 }
 
-#photo1 {
+.-button:hover {
+  background-size: contain;
+  opacity: 80%;
+  transition: 0.4s ease-in;
+}
+
+#photo {
   display: block;
   border: solid 2px;
+  border: black 1px;
 }
-
-#photo1:hover .overlay {
-  opacity: 1;
-}
-
-#photo2 {
-  border: solid 2px;
-}
-
-#photo3 {
-  border: solid 2px;
-  border-color: rgb(255, 183, 0);
-}
-.photo-buttons:hover {
-  background-size: contain;
-  opacity: 60%;
-  transition: 0.3s ease-in;
-}
-
-/* .photo-buttons:hover .overlay {
-  background-size: contain;
-  opacity: 1;
-  transition: 0.5s ease-in;
-} */
 
 #occup {
   border-bottom-style: double;
@@ -143,7 +142,7 @@ button {
 #bio-dots {
   padding-top: 20px;
   border-bottom: dotted 15px;
-  color: yellow;
+  color: rgb(255, 183, 0);
   width: 100px;
 }
 
