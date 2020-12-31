@@ -37,7 +37,7 @@ hides and displays bio photos
 }
 
 button {
-  margin-top: 1rem;
+  margin-top: 1.25rem;
   display: inline-block;
   outline: none;
   border-style: none;
@@ -47,13 +47,13 @@ button {
   background-size: contain;
   background-color: inherit;
   cursor: pointer;
-  transition: 0.1s ease-in;
+  transition: 0.2s ease-in;
   margin: 0.0001rem;
 }
 
 button:hover {
   opacity: 80%;
-  color: rebeccapurple;
+  color: lawngreen;
 }
 .send-button {
   background-color: lawngreen;
@@ -65,35 +65,34 @@ button:hover {
 }
 
 .photo-container {
-  display: inline-table;
+  margin-left: 20rem;
   box-shadow: 0.2px black;
   /* position: relative; */
 }
 
 .button-labels {
   display: flex;
- 
 }
 
 .image {
-  display: inline;
-  margin: .50rem;
+  display: absolute;
+  margin: 0.5rem;
   width: 100px;
-  border: solid 
-  border-width: 0.5rem;
-  opacity: 75%;
+  border: solid 2.5px;
+  border-color: black;
+  border-width: 1px;
+  opacity: 90%;
   cursor: zoom-in;
 }
 
 .image:hover {
-  width: 300px;
-  padding: 0.5rem;
-  opacity: 1;
-  border-bottom: solid .75rem;
-  border-spacing: 0px;
+  width: 250px;
+  opacity: 75%;
   display: inline-block;
   border-color: rgb(255, 183, 0);
-  transition: 0.3s ease-in-out;
+  border-width: 5px;
+  transition: 0.3s ease-out;
+
   /* transition: ease-in-out 0.5s;
   transition-duration: 0.5s;
   transition-property: all; */
@@ -104,14 +103,10 @@ button:hover {
   display: relative;
   outline: black 3px;
   border-style: none;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: inherit;
   cursor: pointer;
 }
 
 .-button:hover {
-  background-size: contain;
   opacity: 80%;
   transition: 0.4s ease-in;
 }
