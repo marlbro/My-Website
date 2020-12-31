@@ -38,19 +38,19 @@ const randomNum = Math.trunc(Math.random() * 3) + 1;
 const randomNum1 = Math.trunc(Math.random() * 3) + 1;
 const randomNum2 = Math.trunc(Math.random() * 3) + 1;
 
+// text content for each photo element
+centerBtn.value = danceBtn;
+
 console.log(randomNum);
 console.log(leftBtn);
+
+if (randomNum === randomNum2 && randomNum1) {
+}
 
 // each element displays random photo
 leftBtn.src = `${images[randomNum]}`;
 rightBtn.src = `${images[randomNum1]}`;
 centerBtn.src = `${images[randomNum2]}`;
-
-// cancel out if one uses same photo
-if (leftBtn === rightBtn && centerBtn) {
-  leftBtn++;
-} else {
-}
 
 // loop through image array
 for (let i = 0; i < images.length; i++) {}

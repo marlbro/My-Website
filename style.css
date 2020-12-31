@@ -37,14 +37,14 @@ hides and displays bio photos
 }
 
 button {
-  display: relative;
+  margin-top: 1rem;
+  display: inline-block;
   outline: none;
   border-style: none;
-  font-family: Arial;
-  font-size: 11px;
+  font-family: tahoma;
+  font-size: 10px;
   font-weight: bolder;
   background-size: contain;
-  background-repeat: no-repeat;
   background-color: inherit;
   cursor: pointer;
   transition: 0.1s ease-in;
@@ -52,8 +52,8 @@ button {
 }
 
 button:hover {
-  display: inherit;
   opacity: 80%;
+  color: rebeccapurple;
 }
 .send-button {
   background-color: lawngreen;
@@ -70,23 +70,29 @@ button:hover {
   /* position: relative; */
 }
 
+.button-labels {
+  display: flex;
+ 
+}
+
 .image {
+  display: inline;
+  margin: .50rem;
   width: 100px;
-  display: inline-block;
-  border: black 1px;
-  border-width: 0.75rem;
-  display: block;
-  border: solid 2px;
+  border: solid 
+  border-width: 0.5rem;
   opacity: 75%;
   cursor: zoom-in;
 }
 
 .image:hover {
-  opacity: 1;
   width: 300px;
+  padding: 0.5rem;
+  opacity: 1;
+  border-bottom: solid .75rem;
+  border-spacing: 0px;
   display: inline-block;
   border-color: rgb(255, 183, 0);
-  border-width: 0.25rem;
   transition: 0.3s ease-in-out;
   /* transition: ease-in-out 0.5s;
   transition-duration: 0.5s;
