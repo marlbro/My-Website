@@ -14,48 +14,61 @@
 // const overlay = document.querySelector(".overlay");
 // const photoRow = document.querySelector(".photo-container");
 
+// loop through image array
+
+//shuffles array elements
+function shuffle(array) {
+  var currentIndex = array.length,
+    temporaryValue,
+    randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+
 // photo array
 const images = [
-  "./photo/photo-1.JPG",
   "./photo/photo-1.JPG",
   "./photo/photo-2.JPG",
   "./photo/photo-3.JPG",
 ];
 
+shuffle(images);
+console.log(images);
+
 // photo element selection
-const centerBtn = document.getElementById("center");
-const leftBtn = document.getElementById("left");
-const rightBtn = document.getElementById("right");
-const photo = document.querySelector(".image");
+
+const photoContain = document.getElementsByClassName("image");
+console.log(photoContain);
 
 // button element selection
+
 const musicBtn = document.querySelector(".music-button");
 const danceBtn = document.querySelector(".dance-button");
 const progBtn = document.querySelector(".prog-button");
 
-// 3 randomly generated numbers between array elements 1-3
-const randomNum = Math.trunc(Math.random() * 3) + 1;
-const randomNum1 = Math.trunc(Math.random() * 3) + 1;
-const randomNum2 = Math.trunc(Math.random() * 3) + 1;
-
 // text content for each photo element
-centerBtn.value = danceBtn;
+let randomNum = Math.trunc(Math.random() * 3);
 
-console.log(randomNum);
-console.log(leftBtn);
 
-if (randomNum === randomNum2 && randomNum1) {
-}
+function shuffleImage() {
+for (let i = 0; i < photoContain.length; i++) {
 
-// each element displays random photo
-leftBtn.src = `${images[randomNum]}`;
-rightBtn.src = `${images[randomNum1]}`;
-centerBtn.src = `${images[randomNum2]}`;
+  let shuffle = document.createElement("img");
+  shuffle.setAttribute("src", "./photo/photo-" + i + ".jpg");
 
-// loop through image array
-for (let i = 0; i < images.length; i++) {}
-
-// cycle through images for each button
-
-// const theLoop = function () {
-// for (i = 0; i < photoButtons[i]; i++);
+  // 3 randomly generated numbers between array elements 0-2
+  // console.log(i);
+  
+};
