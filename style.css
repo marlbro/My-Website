@@ -1,13 +1,19 @@
 * {
-  box-sizing: border-box;
-  margin: auto;
+  /* box-sizing: border-box; */
+  /* margin: auto; */
 }
+
 
 .main {
   background-color: rgb(59, 100, 119);
   font-size: 11px;
   font-family: sans-serif;
   text-align: left;
+}
+
+#pictures {
+margin: 0%;
+text-align: center;
 }
 
 .bio {
@@ -75,19 +81,22 @@ button:hover {
 }
 
 .photo-container {
-  margin-left: 20rem;
+  box-sizing: border-box;
+  padding: 10px;
+
   box-shadow: 0.2px black;
-  /* position: relative; */
+  
 }
 
 .button-labels {
   display: flex;
+  justify-content: center;
 }
 
 .image {
   display: absolute;
   margin: 0.5rem;
-  width: 100px;
+  width: 80px;
   border: solid 2.5px;
   border-color: black;
   border-width: 1px;
@@ -96,12 +105,12 @@ button:hover {
 }
 
 .image:hover {
-  width: 250px;
+  width: 120px;
   opacity: 75%;
   display: inline-block;
   border-color: rgb(255, 183, 0);
   border-width: 5px;
-  transition: 0.3s ease-out;
+  transition: 0.5s ease-out;
 
   /* transition: ease-in-out 0.5s;
   transition-duration: 0.5s;
@@ -147,11 +156,14 @@ button:hover {
 #bio-thing {
   margin-top: 10px;
   text-align: left;
-  text-indent: 3%;
+  text-indent: 0%;
 }
 
 #bio-dots {
-  padding-top: 20px;
+
+  margin: auto;
+  text-align: center;
+  /* padding-top: 20px; */
   border-bottom: dotted 15px;
   color: rgb(255, 183, 0);
   width: 100px;
