@@ -57,6 +57,7 @@ console.log(photoContain);
 const musicBtn = document.querySelector(".music-button");
 const danceBtn = document.querySelector(".dance-button");
 const progBtn = document.querySelector(".prog-button");
+const sendBtn = document.querySelector(".send-button");
 
 // text content for each photo element
 let randomNum = Math.trunc(Math.random() * 3);
@@ -68,3 +69,4 @@ for (let i = 0; i < photoContain.length; i++) {
   // 3 randomly generated numbers between array elements 0-2
   // console.log(i);
 }
+
