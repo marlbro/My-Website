@@ -108,6 +108,7 @@ button:hover {
 
 /* all photos */
 .photo-container {
+  position: relative;
   margin: 0.3rem;
   text-align: center;
   display: block;
@@ -117,30 +118,25 @@ button:hover {
   
 }
 
-.button-labels {
-  /* padding: 10px; */
-  text-align: center;
-}
-
 .image {
 
   /* display: block; */
-  position: relative;
-  align-content: right;
-  /* margin: 0.3rem; */
+  /* position: relative; */
+  /* align-content: right; */
+  margin: 0.3rem;
   width: 180px;
   border: solid 2.5px;
   border-color: black;
   border-width: 1px;
   opacity: 90%;
-  cursor: zoom-in;
+  cursor:pointer;
 }
 
 .image:hover {
 
   margin: 20px;
   width:200px;
-  opacity: 85%;
+  opacity: 55%;
   display: inline-block;
     border-color: rgb(255, 183, 0);
   border-width: 4px;
@@ -151,13 +147,13 @@ button:hover {
   transition-property: all; */
 }
 
-.picture-text {
-  margin: 20px;
-  width: 200px;
-  position: absolute;
-  transform: translate(-50%, -50%);
+#picture-text {
+  /* margin: 20px;
+  width: 200px; */
+
+  position: relative;
   text-align: center;
-  font-size: 18px;
+  font-size: 12px;
 }
 
 .-button {
