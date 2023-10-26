@@ -34,13 +34,6 @@ h2 {
   text-align: left;
 }
 
-
-#menuBtns {
-  margin-left: -10px;
-  font-size: 8px;
- font-family: 'arial';
-}
-
 .bio {
   height: 20%;
   font-family: tahoma;
@@ -108,21 +101,15 @@ button:hover {
 
 /* all photos */
 .photo-container {
-  position: relative;
+
+  justify-content: space-evenly;
+  display: grid;
   margin: 0.3rem;
-  text-align: center;
-  display: block;
-  box-sizing: border-box;
-  /* padding: 10px; */
   box-shadow: 0.2px black;
   
 }
 
-.image {
-
-  /* display: block; */
-  /* position: relative; */
-  /* align-content: right; */
+img {
   margin: 0.3rem;
   width: 180px;
   border: solid 2.5px;
@@ -132,7 +119,7 @@ button:hover {
   cursor:pointer;
 }
 
-.image:hover {
+img:hover {
 
   margin: 20px;
   width:200px;
@@ -147,14 +134,42 @@ button:hover {
   transition-property: all; */
 }
 
-#picture-text {
-  /* margin: 20px;
-  width: 200px; */
+.picture_dance {
 
-  position: relative;
-  text-align: center;
-  font-size: 12px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: #454545;
+padding: 10px 20px;
+font-size: 20px;
+text-align: center;
 }
+
+/* 
+.picture_prog {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #454545;
+  padding: 10px 20px;
+  font-size: 20px;
+  text-align: center;
+  } */
+
+/* .picture_music {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #454545;
+  padding: 10px 20px;
+  font-size: 20px;
+  text-align: center;
+  } */
 
 .-button {
   margin: none;
