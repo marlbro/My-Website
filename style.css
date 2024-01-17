@@ -110,11 +110,12 @@ button:hover {
 
 /* all photos */
 .photo-container {
+  border-bottom-style: solid;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: right;
-  margin: 0.3rem;
+  margin: 1rem;
   box-shadow: 0.2px black;
   text-align: center;
   width: auto;
@@ -123,7 +124,7 @@ button:hover {
 img {
   display: block;
   opacity: 1;
-  margin: 0.3rem;
+  margin: 0.8rem;
   width: 180px;
   border: solid 2.5px;
   border-color: black;
@@ -263,11 +264,10 @@ Picture Text
 
 #intro {
   display: flex;
-
   margin: auto;
-  font-size: 100px;
+  align-content: left;
+  font-size: 150px;
   font-weight: bolder;
-  text-align: left;
   /* text-indent: 20px; */
-  opacity: 70%;
+  opacity: 20%;
 }
