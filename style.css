@@ -30,7 +30,7 @@ h2 {
 }
 
 .main {
-  background: linear-gradient(0.1turn, rgb(59, 100, 119), rgb(18, 53, 76));
+  background: linear-gradient(0.1turn, rgb(59, 100, 119), rgb(16, 54, 80));
   /* background-color: rgb(59, 100, 119); */
   font-size: 11px;
   font-family: sans-serif;
@@ -278,7 +278,7 @@ Picture Text
   font-size: 150px;
   font-weight: bolder;
   /* text-indent: 20px; */
-  opacity: 20%;
+  opacity: 40%;
 }
 
 #label {
