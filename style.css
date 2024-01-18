@@ -4,7 +4,7 @@
 
 h1 {
   float: left;
-  font-size: 25px;
+  font-size: 20px;
   color: aliceblue;
   margin-top: 60px;
   text-indent: 125px;
@@ -66,7 +66,6 @@ hides and displays bio photos
 .btnContainer {
   display: flex;
   flex-direction: row;
-  margin: 0.2rem;
 }
 
 button {
@@ -122,6 +121,9 @@ button:hover {
 }
 
 img {
+  max-height: 100%;
+  max-width: 100%;
+
   display: block;
   opacity: 1;
   margin: 0.8rem;
@@ -134,6 +136,9 @@ img {
 }
 
 img:hover {
+  max-height: 100%;
+  max-width: 100%;
+
   opacity: 30%;
   margin: 0.3rem;
   /* margin: 20px; */
@@ -185,7 +190,10 @@ Picture Text
 
 .-button {
   font-weight: bolder;
-  margin: 0.3rem;
+  margin-left: 0.1rem;
+  margin-right: 0.2rem;
+  margin-top: -0.5rem;
+
   display: relative;
   outline: black 3px;
   border-style: none;
@@ -195,7 +203,8 @@ Picture Text
 .-button:hover {
   opacity: 80%;
   color: rgb(21, 95, 35);
-  transition: 0.4s ease-in;
+  transition: 0.3s ease;
+  font-size: 12px;
 }
 
 .inputbar {
@@ -270,4 +279,9 @@ Picture Text
   font-weight: bolder;
   /* text-indent: 20px; */
   opacity: 20%;
+}
+
+#label {
+  font-size: 10px;
+  font-weight: 900;
 }
