@@ -29,6 +29,30 @@ h2 {
   border-top-style: solid;
 }
 
+button {
+  max-width: 100%;
+  max-height: 100%;
+
+  margin-top: 1.25rem;
+  display: inline-block;
+  outline: none;
+  border-style: none;
+
+  font-family: tahoma;
+  font-size: 10px;
+  font-weight: bolder;
+
+  background-size: contain;
+  background-color: inherit;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+
+button:hover {
+  opacity: 90%;
+  color: rgb(35, 110, 0);
+}
+
 .main {
   background: linear-gradient(0.1turn, rgb(59, 100, 119), rgb(16, 54, 80));
   /* background-color: rgb(59, 100, 119); */
@@ -64,28 +88,10 @@ hides and displays bio photos
 }
 
 .btnContainer {
+  max-width: 100%;
+  max-height: 100%;
   display: flex;
   flex-direction: row;
-}
-
-button {
-  margin-top: 1.25rem;
-  display: inline-block;
-  outline: none;
-  border-style: none;
-  font-family: tahoma;
-  font-size: 10px;
-  font-weight: bolder;
-  background-size: contain;
-  background-color: inherit;
-  cursor: pointer;
-  transition: 0.2s ease-in;
-  margin: 0.0001rem;
-}
-
-button:hover {
-  opacity: 90%;
-  color: rgb(35, 110, 0);
 }
 
 .send-button {
@@ -120,7 +126,7 @@ button:hover {
   width: auto;
 }
 
-img {
+.image {
   max-height: 100%;
   max-width: 100%;
 
@@ -131,11 +137,11 @@ img {
   border: solid 2.5px;
   border-color: black;
   border-width: 1px;
-  opacity: 90%;
+  opacity: 75%;
   cursor: pointer;
 }
 
-img:hover {
+.image:hover {
   max-height: 100%;
   max-width: 100%;
 
@@ -143,7 +149,7 @@ img:hover {
   margin: 0.3rem;
   /* margin: 20px; */
   width: 185px;
-  opacity: 55%;
+  opacity: 95%;
   display: inline-block;
   border-color: rgb(255, 183, 0);
   border-width: 4px;
@@ -154,43 +160,12 @@ img:hover {
   transition-property: all; */
 }
 
-/*
-Picture Text
-*/
-.picture_dance {
-  transform: translate(-50%, -50%);
-  background-color: #454545;
-  padding: 10px 20px;
-  font-size: 20px;
-  text-align: center;
-  align-content: center;
-}
-
-.picture_prog {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #454545;
-  padding: 10px 20px;
-  font-size: 20px;
-  text-align: center;
-}
-
-.picture_music {
-  /* position: absolute;
-  top: 50%;
-  left: 50%; */
-  transform: translate(-50%, -50%);
-  background-color: #454545;
-  padding: 10px 20px;
-  font-size: 20px;
-  text-align: center;
-}
-
 .-button {
+  max-width: 100%;
+  max-height: 100%;
+
   font-weight: bolder;
-  margin-left: 0.1rem;
+  margin-left: 0.5rem;
   margin-right: 0.2rem;
   margin-top: -0.5rem;
 
@@ -228,18 +203,9 @@ Picture Text
   direction: rtl;
 }
 
-#bio-border {
-  margin-top: 20px;
-  border-bottom-color: yellow;
-  border-bottom-style: dotted;
-  border-width: 20px;
-  width: 150px;
-}
-
 #bio-thing {
   margin-top: 10px;
   text-align: left;
-  text-indent: 0%;
 }
 
 #bio-dots {
@@ -285,3 +251,7 @@ Picture Text
   font-size: 10px;
   font-weight: 900;
 }
+
+/* #dabble {
+  
+} */
