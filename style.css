@@ -1,6 +1,4 @@
-/* * {
-  
-} */
+
 
 h1 {
   float: left;
@@ -20,10 +18,11 @@ h6 {
 }
 
 h2 {
-  font-family: tahoma;
+  
+  padding-top: 10px;
   margin-top: 80px;
   text-align: right;
-  font-size: 11px;
+  font-size: 14px;
   color: black;
   border: 3px;
   border-top-style: solid;
@@ -34,12 +33,10 @@ button {
   max-height: 100%;
 
   margin-top: 1.25rem;
-  display: inline-block;
+  /* display: inline-block; */
   outline: none;
   border-style: none;
 
-  font-family: tahoma;
-  font-size: 10px;
   font-weight: bolder;
 
   background-size: contain;
@@ -49,19 +46,33 @@ button {
 }
 
 button:hover {
+  /* display: relative; */
   opacity: 90%;
   color: rgb(35, 110, 0);
+  font-size: 100px;
 }
 
 .main {
   background: linear-gradient(0.1turn, rgb(59, 100, 119), rgb(16, 54, 80));
   /* background-color: rgb(59, 100, 119); */
-  font-size: 11px;
-  font-family: sans-serif;
-  text-align: left;
+  font-size: 19px;
+  font-family:'Arial';
+ 
 }
 
+img.wrench {
+  display:block;
+  margin: auto;
+ 
+  padding: 10px;
+
+}
+
+
+
 .bio {
+  margin:auto;
+  padding:5px;
   height: 20%;
   font-family: tahoma;
 }
@@ -117,9 +128,10 @@ hides and displays bio photos
 .photo-container {
   border-bottom-style: solid;
   display: flex;
+  align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: right;
+  justify-content: center;
   margin: 1rem;
   box-shadow: 0.2px black;
   text-align: center;
@@ -160,26 +172,39 @@ hides and displays bio photos
   transition-property: all; */
 }
 
+.vector {
+
+  justify-content: center;
+}
+
 .-button {
   max-width: 100%;
   max-height: 100%;
 
-  font-weight: bolder;
+  
   margin-left: 0.5rem;
   margin-right: 0.2rem;
   margin-top: -0.5rem;
-
+  
   display: relative;
   outline: black 3px;
   border-style: none;
   cursor: pointer;
+  
+  
+  font-weight: bolder;
+
 }
 
 .-button:hover {
   opacity: 80%;
-  color: rgb(21, 95, 35);
+  -webkit-text-stroke: black 0.4px;
+  color: rgb(255, 251, 0);
   transition: 0.3s ease;
-  font-size: 12px;
+  
+  
+  
+  font-size: 21px;
 }
 
 .inputbar {
@@ -190,6 +215,7 @@ hides and displays bio photos
 
 #photo {
   display: block;
+   
   border: solid 2px;
   border: black 1px;
 }
@@ -229,29 +255,45 @@ hides and displays bio photos
   background-color: rgb(157, 194, 178);
 }
 
-#intro-text {
-  /* display: flex; */
-  text-align: left;
-  margin-top: 3px;
-  margin-block: 1%;
-  /* text-indent: 50px; */
-}
+
+
 
 #intro {
   display: flex;
+  opacity: 80%;
+  
   margin: auto;
-  align-content: left;
+  margin-right: -20px;
+  /* align-content: left; */
+  
+  font-family: Tahoma;
+  color:rgb(3, 61, 3);
   font-size: 150px;
   font-weight: bolder;
+  
   /* text-indent: 20px; */
-  opacity: 40%;
+}
+#dabble {
+
+  text-align: center;
+  font-family: tahoma;
+  margin: auto;
+   
 }
 
 #label {
-  font-size: 10px;
-  font-weight: 900;
+
+
+  margin-left:auto;
+  opacity: 60%;
+  font-size: 24px;
+  font-weight: bolder;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
+
+
 }
 
-/* #dabble {
-  
-} */
+
+

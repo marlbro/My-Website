@@ -68,5 +68,12 @@ for (let i = 0; i < photoContain.length; i++) {
 
   // 3 randomly generated numbers between array elements 0-2
   // console.log(i);
-}
+
+  function forEmail() 
+  {
+      window.location = "mailto:hharriswilliam@gmail.com";
+
+  }
+
+  sendBtn
 
