@@ -75,5 +75,6 @@ for (let i = 0; i < photoContain.length; i++) {
 
   }
 
-  sendBtn
+  sendBtn;
 
+  
